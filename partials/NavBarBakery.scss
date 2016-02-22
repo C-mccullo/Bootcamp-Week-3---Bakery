@@ -1,0 +1,55 @@
+// *****************************************
+//               NAV BAR
+// *****************************************
+
+nav {
+	text-align: right;
+	position: fixed;
+	right: 15px;
+	z-index: 99;
+	padding-top: 15px;
+	padding-top: 1.5rem;
+	a.hamburger {
+		padding: 15px 10px;
+		position: relative;
+		z-index: 99;
+		outline: none;
+		i.fa {
+			font-size: 30px;
+			color: $bakerOrange;
+		}
+	}
+	.headerNav {
+		margin: 0;	
+		width: 25%;
+		height: 100vh;
+		padding: 0 4rem;
+		background: $darkGrey;
+		position: fixed;
+		top: 0;
+		right: -25%;
+		z-index: 10;
+		transition: all 1s ease;
+		.navTopListItem {
+			padding-top: 5.5rem;
+			padding-top: 5.5rem;
+		}
+		&.open {
+		right: 0;
+		}
+		li {
+		padding: 3rem 0;
+		text-align: center;
+			a {
+				text-transform: uppercase;
+				color: $white;
+				padding: 5%;
+				font-size: 1.7rem; 
+				&:hover {
+					color: $bakerOrange;
+					border-bottom: 1px solid $bakerOrange;
+				}
+			}
+		}
+	}
+}

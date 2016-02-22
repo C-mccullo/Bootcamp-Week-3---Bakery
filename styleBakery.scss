@@ -1,0 +1,497 @@
+
+// Color Variables
+$white: #ffffff;
+$journalWhite: rgba(255,255,255,0.8);
+$lightGrey: #fefcf8;
+$mediumGrey: #262422;
+$darkGrey: #262422;
+$borderGrey: #404045;
+$blogGrey: #5c5c5c;
+$menuGrey: #67676e;
+$bakerOrange: #ea9044;
+
+// Fonts 
+
+$Raleway-font: 'Raleway', sans-serif;
+$Rufina-font: 'Rufina', serif;
+
+// Mixins
+
+@mixin sectionSetup ($backgroundUrl) {
+	background-image: $backgroundUrl;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 90px;
+	padding-bottom: 40px;
+	z-index: -2;
+	margin: 0 auto;
+}
+@mixin textStandards ($textStyles) {
+	font-family: $Raleway-font;
+	font-size: $textStyles * 1px;
+	font-size: $textStyles/10 * 1rem;
+	line-height: $textStyles * 1px + 4px;
+	line-height: $textStyles/10 * 1rem + 0.4rem;
+} 
+
+@mixin borderDubs ($borderColor) {
+	&::after {
+		content: "";
+		position: absolute;
+		top: -5px;
+		bottom: -5px;
+		left: -5px;
+		right: -5px;
+		border: 2px solid $borderColor;
+		z-index: -1;
+	}
+}
+
+@mixin contactIcon ($SVGLink) {
+	&::before {
+		display: block;
+		content: ($SVGLink);
+		width: 18px;
+		height: 18px;
+		position: relative;
+		left: 30px;
+		left: -3rem;
+		bottom: 17px;
+		bottom: -1.7rem;
+	}
+}
+
+// Partials 
+@import "partials/setupBakery";
+@import "partials/baseStylesBakery";
+@import "partials/NavBarBakery";
+@import "partials/headerBakery";
+@import "partials/whatWeDoBakery";
+@import "partials/menuBakery";
+@import "partials/aboutBakery";
+@import "partials/galleryBakery";
+@import "partials/journalBakery";
+@import "partials/reservationBakery";
+@import "partials/contactBakery";
+@import "partials/footerBakery";
+
+// Media Queries
+ 
+@media (max-width: 768px) {
+	p {
+		@include textStandards(12);
+	}
+	a {
+		i.fa {
+			font-size: 20px;
+			font-size: 2.0rem;
+		}
+	}
+	.wrapper {
+		padding: 0 10%;
+	}
+	nav {
+		.headerNav {
+			width: 30%;
+			right: -30%;
+			li a {
+				font-size: 14px;
+				font-size: 1.4rem;
+			}
+		}
+	}
+	header.Hero {
+		.titleDiv {
+			width: 70%;
+		}
+	}
+	section.menu {
+		.eatsWrapper {
+			width: 80%;
+			border: 1px solid $menuGrey;
+			position: relative;
+			z-index: 20;
+			@include borderDubs($menuGrey);
+			.eatsDiv {
+				width: 100%;
+				border: 1px solid transparent;
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+	section.aboutSection {
+		.aboutWrapper {
+			width: 70%;
+		}
+	}
+	section.gallerySection {
+		.foodGalleryWrapper {
+			.foodGalleryOptions {
+				width: 100%;
+				.galleryList {
+					width: 20%;
+					padding: 10px 15px;
+					margin: 0;
+					text-align: center;
+					p {
+						margin: 0;
+						font-size: 14px;
+						font-size: 1.4rem;
+					}
+				}
+			}
+			.foodGallery {
+				width: 100%;
+			}
+		}
+	}
+	section.reservationSection {
+		.reservationFlexWrapper {
+			.reservationCall {
+				width: 100%;
+				.reservationCallText {
+					width: 48%;
+				}
+				.reservationCallLink {
+					width: 48%;
+					.reservationCallLinkText {
+						p {
+						font-weight: 800;
+						}
+					}	
+				}
+			}
+			.reservationForm {
+				width: 100%;
+			}	
+		}
+	}
+	section.contact {
+		.contactFlexWrapper {
+			.contactText {
+				width: 100%;
+				margin-bottom: 20px;
+				.contactTop {
+					width: 100%;
+					.contactTopItem {
+						width: 50%;
+					}	
+				}	
+			}
+			.contactForm {
+				width: 100%;
+			}	
+		}
+	}
+}
+
+@media (max-width: 590px) {
+
+	h2 {
+		font-size: 26px;
+		font-size: 2.6rem;
+	}
+	h3 {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+	h4 {
+		font-size: 10px;
+		font-size: 1.0rem;
+	}
+	p {
+		@include textStandards(12);
+	}
+	.wrapper {
+		padding: 0 10%;
+	}
+	nav {
+		.headerNav {
+			width: 40%;
+			right: -40%;
+			padding: 0 3rem;
+			li a {
+				font-size: 12px;
+				font-size: 1.2rem;
+			}
+		}
+	}
+	header.Hero {
+		.titleDiv {
+			width: 100%;
+			margin: 0 auto 40px auto;
+		}
+		.addressDiv {
+			display: none;
+		}
+	}
+	section.whatWeDo {
+		.flexWrapper {
+			.weDoItem {
+			flex: 0 1 33.33%;
+			}
+		}	
+	}
+	section.menu {
+		.eatsWrapper {
+			width: 100%;
+			.eatsDiv {
+				width: 100%;
+				min-width: 100px;
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+	section.aboutSection {
+		.aboutWrapper {
+			width: 90%;
+		}
+		.signatureDiv {
+			width: 50%;
+		}
+	}
+	section.gallerySection {
+		.foodGalleryWrapper {
+			.foodGalleryOptions {
+				width: 100%;
+				.galleryList {
+					width: 50%;
+					padding: 10px 15px;
+					margin: 0;
+					text-align: center;
+					p {
+						margin: 0;
+						font-size: 12px;
+						font-size: 1.2rem;
+					}
+				}
+			}
+			.foodGallery {
+				width: 100%;
+				.foodGalleryItem {
+					display: block;
+					flex-basis: 50%;
+				}
+				.mediaHide {
+					display: none;
+				}
+			}
+		}
+	}
+	section.journalSection {
+		.journalGalleryWrapper {
+			.journalGalleryItem {
+				flex-basis: 50%;
+			}
+			.mediaHide {
+				display: none;
+			}	
+		}
+		
+	}
+	section.reservationSection {
+		.reservationFlexWrapper {
+			.reservationCall {
+				width: 100%;
+				.reservationCallText {
+					width: 100%;
+				}
+				.reservationCallLink {
+					width: 100%;
+					.reservationCallLinkText {
+						p {
+						font-weight: 800;
+						}
+					}	
+				}
+			}
+			.reservationForm {
+				width: 100%;
+				.reservationInput {
+					width: 100%;
+				}
+				input {
+					width: 100%;
+				}
+			}	
+		}
+	}
+	section.contact {
+		.contactFlexWrapper {
+			.contactText {
+				width: 100%;
+				margin-bottom: 20px;
+				.contactTop {
+					width: 100%;
+					.contactTopItem {
+						width: 100%;
+					}	
+				}	
+			}
+			.contactForm {
+				width: 100%;
+			}	
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	h2 {
+		font-size: 26px;
+		font-size: 2.6rem;
+	}
+	h3 {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+	h4 {
+		font-size: 12px;
+		font-size: 1.2rem;
+	}
+	.wrapper {
+		padding: 0 10%;
+	}
+	header.Hero {
+		padding-top: 40px;
+		.titleDiv {
+			width: 100%;
+		}
+		.addressDiv {
+			display: none;
+		}
+	}
+	section.whatWeDo {
+		padding-top: 40px;
+		.flexWrapper {
+			padding-top: 0;
+			.weDoItem {
+			flex: 0 1 70%;
+			}
+		}	
+	}
+	section.menu {
+		padding-top: 40px;
+		.eatsWrapper {
+			width: 100%;
+			.eatsDiv {
+				width: 100%;
+				min-width: 100px;
+				border: none;
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+	section.aboutSection {
+		padding-top: 40px;
+		.aboutWrapper {
+			width: 90%;
+		}
+		.signatureDiv {
+			width: 50%;
+		}
+	}
+	section.gallerySection {
+		padding-top: 40px;
+		.foodGalleryWrapper {
+			.foodGalleryOptions {
+				width: 100%;
+				.galleryList {
+					width: 50%;
+					padding: 10px 15px;
+					margin: 0;
+					text-align: center;
+					p {
+						margin: 0;
+						font-size: 12px;
+						font-size: 1.2rem;
+					}
+				}
+			}
+			.foodGallery {
+				width: 100%;
+				.foodGalleryItem {
+					display: block;
+					flex-basis: 50%;
+				}
+				.mediaHide {
+					display: none;
+				}
+			}
+		}
+	}
+	section.journalSection {
+		padding-top: 40px;
+		.journalGalleryWrapper {
+			.journalGalleryItem {
+				flex-basis: 50%;
+			}
+			.mediaHide {
+				display: none;
+			}	
+		}
+		
+	}
+	section.reservationSection {
+		padding-top: 40px;
+		.reservationFlexWrapper {
+			.reservationCall {
+				width: 100%;
+				.reservationCallText {
+					width: 100%;
+				}
+				.reservationCallLink {
+					width: 100%;
+					.reservationCallLinkText {
+						p {
+						font-weight: 800;
+						}
+					}	
+				}
+			}
+			.reservationForm {
+				width: 100%;
+				.reservationInput {
+					width: 100%;
+				}
+				input {
+					width: 100%;
+				}
+			}	
+		}
+	}
+	section.contact {
+		padding-top: 40px;
+		.contactFlexWrapper {
+			.contactText {
+				width: 100%;
+				margin-bottom: 20px;
+				.contactTop {
+					width: 100%;
+					.contactTopItem {
+						width: 100%;
+					}	
+				}	
+			}
+			.contactForm {
+				width: 100%;
+			}	
+		}
+	}
+	footer.bakeryFooter {
+		.footerFlexWrapper {
+			flex-flow: column-reverse wrap;
+			.customMenu {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+		
+	}
+}
+

@@ -1,0 +1,77 @@
+// Gallery Section Bakery 
+
+	section.gallerySection {
+		@include sectionSetup(url(bakery/assets/gallerybg.jpg));
+		padding-top: 70px;
+		padding-bottom: 50px;
+		h2{
+			color: $bakerOrange;
+		}
+		.foodGalleryWrapper {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		.foodGalleryOptions {
+			width: 23%;
+			float: left;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid $darkGrey;
+			position: relative;
+			z-index: 10;
+			@include borderDubs($darkGrey);	
+			li.galleryList {
+				float: left;
+				font-family: $Rufina-font;
+				color: $darkGrey;
+				text-align: right;
+				font-size: 16px;
+				font-size: 1.6rem;
+				padding: 5px 15px;
+				z-index: 20;
+				// direction: rtl;
+				// list-style-type: cirle;
+
+				p { 
+					margin: 0;
+					font-size: 16px;
+					font-family: $Rufina-font;
+					position: relative;
+					&:hover {
+						color: $bakerOrange;
+					}
+					&::after {
+						content:" ";
+						width: 7px;
+						height: 7px;
+						position: absolute;
+						top: 4px;
+						right: -15px;
+						border-radius: 50%;
+						background-color: $darkGrey;
+					}
+					&:hover::after {
+						background-color: $bakerOrange;
+					}
+				}	
+			}
+		}
+	}
+	
+.foodGallery {
+	width: 73%;
+	float: left;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	.foodGalleryItem {
+		display: block;
+		flex-basis: 33.3%;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

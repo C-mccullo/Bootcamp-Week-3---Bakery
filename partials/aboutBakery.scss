@@ -1,0 +1,22 @@
+// About Section Bakery
+
+section.aboutSection {
+	@include sectionSetup(url(bakery/assets/aboutbg.png));
+	position: relative;
+	.aboutWrapper {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 50%;
+		position: relative;
+	}
+	.signatureDiv {
+		width: 20%;
+		position: absolute;
+		bottom: 0;
+		margin: 30px 0;
+		img {
+			width: 50%;
+			max-width: 150px;
+		}
+	}
+}	

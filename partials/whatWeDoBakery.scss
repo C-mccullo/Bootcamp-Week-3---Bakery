@@ -1,0 +1,21 @@
+// What We Do Section Bakery
+
+section.whatWeDo {
+	.flexWrapper {
+		padding-top: 90px;
+		padding-bottom: 70px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: center;
+		li {
+			flex: 0 1 33.33%;
+			padding: 20px;
+			text-align: center;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

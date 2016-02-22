@@ -1,0 +1,1404 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Rufina", serif;
+  font-size: 36px;
+  font-size: 3.6rem;
+  line-height: 36px;
+  line-height: 3.6rem;
+}
+
+h3 {
+  font-family: "Rufina", serif;
+  color: #ea9044;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 18px;
+  line-height: 1.8rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: block;
+  width: 100%;
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ea9044;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 18px;
+  line-height: 1.8rem;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.wrapper {
+  padding: 0 15%;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+i.fa {
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: 6px;
+  letter-spacing: 0.6rem;
+  color: #ea9044;
+}
+
+input {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #262422;
+  font-weight: 700;
+  padding: 20px;
+  padding: 2.0rem;
+  border: 1px solid #262422;
+  outline: none;
+}
+
+input::-webkit-placeholder {
+  color: #262422;
+}
+
+input::-moz-placeholder {
+  color: #262422;
+}
+
+input::-ms-input-placeholder {
+  color: #262422;
+}
+
+textarea {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #262422;
+  font-weight: 700;
+  padding: 20px;
+  padding: 2.0rem;
+  border: 1px solid #262422;
+  outline: none;
+  resize: none;
+}
+
+input.formButton {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
+  color: #262422;
+  font-weight: 700;
+  padding: 20px;
+  padding: 2.0rem;
+  border: 1px solid #262422;
+  outline: none;
+  background: url(bakery/assets/seal.png) 5% no-repeat;
+  background-color: white;
+}
+
+nav {
+  text-align: right;
+  position: fixed;
+  right: 15px;
+  z-index: 99;
+  padding-top: 15px;
+  padding-top: 1.5rem;
+}
+
+nav a.hamburger {
+  padding: 15px 10px;
+  position: relative;
+  z-index: 99;
+  outline: none;
+}
+
+nav a.hamburger i.fa {
+  font-size: 30px;
+  color: #ea9044;
+}
+
+nav .headerNav {
+  margin: 0;
+  width: 25%;
+  height: 100vh;
+  padding: 0 4rem;
+  background: #262422;
+  position: fixed;
+  top: 0;
+  right: -25%;
+  z-index: 10;
+  transition: all 1s ease;
+}
+
+nav .headerNav .navTopListItem {
+  padding-top: 5.5rem;
+  padding-top: 5.5rem;
+}
+
+nav .headerNav.open {
+  right: 0;
+}
+
+nav .headerNav li {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+nav .headerNav li a {
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 5%;
+  font-size: 1.7rem;
+}
+
+nav .headerNav li a:hover {
+  color: #ea9044;
+  border-bottom: 1px solid #ea9044;
+}
+
+header.Hero {
+  background-image: url(bakery/images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  z-index: -2;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  position: relative;
+}
+
+header.Hero .titleDiv {
+  width: 50%;
+  margin: 0 auto 60px auto;
+}
+
+header.Hero .titleDiv img.logo {
+  width: 30%;
+  position: relative;
+  left: calc(50% - 15%);
+  display: block;
+}
+
+header.Hero .titleDiv img.brandName {
+  width: 100%;
+  display: block;
+}
+
+header.Hero .titleDiv p {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+header.Hero .addressDiv {
+  background-image: url(bakery/assets/circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 220px;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  padding-top: 30px;
+}
+
+section.whatWeDo .flexWrapper {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+section.whatWeDo .flexWrapper li {
+  flex: 0 1 33.33%;
+  padding: 20px;
+  text-align: center;
+}
+
+section.whatWeDo .flexWrapper li img {
+  width: 100%;
+}
+
+section.menu {
+  padding-top: 90px;
+  padding-bottom: 40px;
+  background-image: url(bakery/assets/menubg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  z-index: -2;
+  margin: 0 auto;
+}
+
+section.menu .menuTitle {
+  background-image: url(bakery/assets/menu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  max-width: 200px;
+  height: 118px;
+  padding-top: 6%;
+  margin-bottom: 30px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+section.menu .menuTitle h2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fefcf8;
+  margin: 0;
+}
+
+section.menu .eatsWrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+section.menu .eatsWrapper .eatsDiv {
+  border: 1px solid #67676e;
+  padding: 3%;
+  width: 47%;
+  position: relative;
+  z-index: 1;
+}
+
+section.menu .eatsWrapper .eatsDiv li .menuItemFlexWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section.menu .eatsWrapper .eatsDiv li .menuItemFlexWrapper h4 {
+  color: #ffffff;
+  text-align: left;
+  display: block;
+}
+
+section.menu .eatsWrapper .eatsDiv li p {
+  color: #67676e;
+  margin: 0;
+  width: 80%;
+}
+
+section.menu .eatsWrapper .eatsDiv::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  border: 2px solid #67676e;
+  z-index: -1;
+}
+
+section.aboutSection {
+  background-image: url(bakery/assets/aboutbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  z-index: -2;
+  margin: 0 auto;
+  position: relative;
+}
+
+section.aboutSection .aboutWrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 50%;
+  position: relative;
+}
+
+section.aboutSection .signatureDiv {
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  margin: 30px 0;
+}
+
+section.aboutSection .signatureDiv img {
+  width: 50%;
+  max-width: 150px;
+}
+
+section.gallerySection {
+  background-image: url(bakery/assets/gallerybg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  z-index: -2;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+section.gallerySection h2 {
+  color: #ea9044;
+}
+
+section.gallerySection .foodGalleryWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section.gallerySection .foodGalleryOptions {
+  width: 23%;
+  float: left;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #262422;
+  position: relative;
+  z-index: 10;
+}
+
+section.gallerySection .foodGalleryOptions::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  border: 2px solid #262422;
+  z-index: -1;
+}
+
+section.gallerySection .foodGalleryOptions li.galleryList {
+  float: left;
+  font-family: "Rufina", serif;
+  color: #262422;
+  text-align: right;
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 5px 15px;
+  z-index: 20;
+}
+
+section.gallerySection .foodGalleryOptions li.galleryList p {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Rufina", serif;
+  position: relative;
+}
+
+section.gallerySection .foodGalleryOptions li.galleryList p:hover {
+  color: #ea9044;
+}
+
+section.gallerySection .foodGalleryOptions li.galleryList p::after {
+  content: " ";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 4px;
+  right: -15px;
+  border-radius: 50%;
+  background-color: #262422;
+}
+
+section.gallerySection .foodGalleryOptions li.galleryList p:hover::after {
+  background-color: #ea9044;
+}
+
+.foodGallery {
+  width: 73%;
+  float: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.foodGallery .foodGalleryItem {
+  display: block;
+  flex-basis: 33.3%;
+}
+
+.foodGallery .foodGalleryItem img {
+  width: 100%;
+  height: 100%;
+}
+
+section.journalSection {
+  background-image: url(bakery/assets/journalbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  z-index: -2;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+section.journalSection h2 {
+  color: #ea9044;
+}
+
+section.journalSection .journalGalleryWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+section.journalSection .journalGalleryItem {
+  position: relative;
+  flex-basis: 33.33%;
+}
+
+section.journalSection .journalGalleryItem div.journalGalleryItemEntry {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+section.journalSection .journalGalleryItem div.journalGalleryItemEntry p {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  right: 10px;
+  background-color: #ea9044;
+  color: #ffffff;
+}
+
+section.journalSection .journalGalleryItem div.journalGalleryItemEntry h4 {
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  right: 10px;
+  text-align: right;
+  font-family: "Rufina", serif;
+  text-transform: none;
+}
+
+section.journalSection .journalGalleryItem:hover .journalGalleryItemEntry {
+  display: block;
+}
+
+section.journalSection a {
+  position: relative;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+section.journalSection a .journalButton {
+  border: 1px solid #ea9044;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  transform: translate(-50%);
+}
+
+section.journalSection a .journalButton p {
+  color: #ea9044;
+}
+
+section.reservationSection {
+  background-image: url(bakery/assets/reservationbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  z-index: -2;
+  margin: 0 auto;
+}
+
+section.reservationSection h2 {
+  color: #ea9044;
+}
+
+section.reservationSection .reservationFlexWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationCall {
+  width: 28%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallText {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink {
+  width: 100%;
+  padding: 5px 15px;
+  position: relative;
+  color: #262422;
+  border: 1px solid #262422;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  border: 2px solid #262422;
+  z-index: -1;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink:hover {
+  background-color: #ffffff;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink .reservationCallLinkPhone {
+  width: 20%;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink .reservationCallLinkPhone i {
+  color: #ea9044;
+  font-size: 30px;
+  display: block;
+  margin-right: 5px;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink .reservationCallLinkText {
+  width: 60%;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink .reservationCallLinkText p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationForm {
+  width: 68%;
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid #262422;
+  position: relative;
+  z-index: 10;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationForm::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  border: 2px solid #262422;
+  z-index: -1;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationForm .reservationInput {
+  border: 1px solid #262422;
+  width: 50%;
+  display: flex;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationForm .reservationInput input {
+  flex-grow: 1;
+  border: none;
+  width: 75%;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationForm .reservationInput i {
+  padding-top: 20px;
+  padding-right: 10px;
+  font-size: 20px;
+  color: #262422;
+  background-color: white;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationForm input {
+  width: 50%;
+}
+
+section.reservationSection .reservationFlexWrapper .reservationForm .formButton {
+  width: 100%;
+}
+
+section.contact {
+  background-image: url(bakery/assets/contactbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  z-index: -2;
+  margin: 0 auto;
+}
+
+section.contact h2 {
+  color: #ea9044;
+}
+
+section.contact .contactFlexWrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+section.contact .contactFlexWrapper .contactText {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+section.contact .contactFlexWrapper .contactText .contactTop {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+
+section.contact .contactFlexWrapper .contactText .contactTop .contactTopItem {
+  width: 100%;
+}
+
+section.contact .contactFlexWrapper .contactText .contactTop .contactTopItem p {
+  margin: 0;
+  font-weight: 700;
+  margin-left: 30px;
+  margin-left: 3rem;
+}
+
+section.contact .contactFlexWrapper .contactText .contactTop .contactTopItem .contactAddress::before {
+  display: block;
+  content: url(bakery/assets/noun_Marker_Mattia-Lambardini.svg);
+  width: 18px;
+  height: 18px;
+  position: relative;
+  left: 30px;
+  left: -3rem;
+  bottom: 17px;
+  bottom: -1.7rem;
+}
+
+section.contact .contactFlexWrapper .contactText .contactTop .contactTopItem .contactPhone::before {
+  display: block;
+  content: url(bakery/assets/noun-Phone_Hello-Manny.svg);
+  width: 18px;
+  height: 18px;
+  position: relative;
+  left: 30px;
+  left: -3rem;
+  bottom: 17px;
+  bottom: -1.7rem;
+}
+
+section.contact .contactFlexWrapper .contactText .contactTop .contactTopItem .contactEmail::before {
+  display: block;
+  content: url(bakery/assets/mailLetter.svg);
+  width: 18px;
+  height: 18px;
+  position: relative;
+  left: 30px;
+  left: -3rem;
+  bottom: 17px;
+  bottom: -1.7rem;
+}
+
+section.contact .contactFlexWrapper .contactText .socialMedia {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section.contact .contactFlexWrapper .contactText .socialMedia i {
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: 6px;
+  letter-spacing: 0.6rem;
+  color: #ea9044;
+}
+
+section.contact .contactFlexWrapper .contactText .mapContainer {
+  display: flex;
+  flex-basis: 300px;
+}
+
+section.contact .contactFlexWrapper .contactText .mapContainer .googleMap {
+  width: 100%;
+}
+
+section.contact .contactFlexWrapper .contactForm {
+  position: relative;
+  border: 1px solid #262422;
+  z-index: 10;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+section.contact .contactFlexWrapper .contactForm::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  border: 2px solid #262422;
+  z-index: -1;
+}
+
+section.contact .contactFlexWrapper .contactForm input {
+  width: 100%;
+  padding: 20px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+section.contact .contactFlexWrapper .contactForm textarea {
+  flex-grow: 1;
+}
+
+footer.bakeryFooter {
+  background-image: url(bakery/assets/footerbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  z-index: -2;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+footer.bakeryFooter .footerFlexWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+footer.bakeryFooter .footerFlexWrapper li {
+  margin-bottom: 5px;
+}
+
+footer.bakeryFooter .footerFlexWrapper .socialFooter {
+  flex: 1 0 30%;
+}
+
+footer.bakeryFooter .footerFlexWrapper .socialFooter a i.fa {
+  font-size: 20px;
+  font-size: 2.0rem;
+}
+
+footer.bakeryFooter .footerFlexWrapper .socialFooter a:hover i.fa {
+  color: #ffffff;
+}
+
+footer.bakeryFooter .footerFlexWrapper .customMenu {
+  flex: 1 0 30%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer.bakeryFooter .footerFlexWrapper .hoursJournal {
+  flex: 1 0 30%;
+  flex-direction: column;
+}
+
+footer.bakeryFooter .footerFlexWrapper .hoursJournal .journalPostItem {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+  }
+  a i.fa {
+    font-size: 20px;
+    font-size: 2.0rem;
+  }
+  .wrapper {
+    padding: 0 10%;
+  }
+  nav .headerNav {
+    width: 30%;
+    right: -30%;
+  }
+  nav .headerNav li a {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  header.Hero .titleDiv {
+    width: 70%;
+  }
+  section.menu .eatsWrapper {
+    width: 80%;
+    border: 1px solid #67676e;
+    position: relative;
+    z-index: 20;
+  }
+  section.menu .eatsWrapper::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border: 2px solid #67676e;
+    z-index: -1;
+  }
+  section.menu .eatsWrapper .eatsDiv {
+    width: 100%;
+    border: 1px solid transparent;
+  }
+  section.menu .eatsWrapper .eatsDiv::after {
+    display: none;
+  }
+  section.aboutSection .aboutWrapper {
+    width: 70%;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGalleryOptions {
+    width: 100%;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGalleryOptions .galleryList {
+    width: 20%;
+    padding: 10px 15px;
+    margin: 0;
+    text-align: center;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGalleryOptions .galleryList p {
+    margin: 0;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGallery {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallText {
+    width: 48%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink {
+    width: 48%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink .reservationCallLinkText p {
+    font-weight: 800;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationForm {
+    width: 100%;
+  }
+  section.contact .contactFlexWrapper .contactText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.contact .contactFlexWrapper .contactText .contactTop {
+    width: 100%;
+  }
+  section.contact .contactFlexWrapper .contactText .contactTop .contactTopItem {
+    width: 50%;
+  }
+  section.contact .contactFlexWrapper .contactForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 590px) {
+  h2 {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 10px;
+    font-size: 1.0rem;
+  }
+  p {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 16px;
+    line-height: 1.6rem;
+  }
+  .wrapper {
+    padding: 0 10%;
+  }
+  nav .headerNav {
+    width: 40%;
+    right: -40%;
+    padding: 0 3rem;
+  }
+  nav .headerNav li a {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  header.Hero .titleDiv {
+    width: 100%;
+    margin: 0 auto 40px auto;
+  }
+  header.Hero .addressDiv {
+    display: none;
+  }
+  section.whatWeDo .flexWrapper .weDoItem {
+    flex: 0 1 33.33%;
+  }
+  section.menu .eatsWrapper {
+    width: 100%;
+  }
+  section.menu .eatsWrapper .eatsDiv {
+    width: 100%;
+    min-width: 100px;
+  }
+  section.menu .eatsWrapper .eatsDiv::after {
+    display: none;
+  }
+  section.aboutSection .aboutWrapper {
+    width: 90%;
+  }
+  section.aboutSection .signatureDiv {
+    width: 50%;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGalleryOptions {
+    width: 100%;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGalleryOptions .galleryList {
+    width: 50%;
+    padding: 10px 15px;
+    margin: 0;
+    text-align: center;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGalleryOptions .galleryList p {
+    margin: 0;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGallery {
+    width: 100%;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGallery .foodGalleryItem {
+    display: block;
+    flex-basis: 50%;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGallery .mediaHide {
+    display: none;
+  }
+  section.journalSection .journalGalleryWrapper .journalGalleryItem {
+    flex-basis: 50%;
+  }
+  section.journalSection .journalGalleryWrapper .mediaHide {
+    display: none;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallText {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink .reservationCallLinkText p {
+    font-weight: 800;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationForm {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationForm .reservationInput {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationForm input {
+    width: 100%;
+  }
+  section.contact .contactFlexWrapper .contactText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.contact .contactFlexWrapper .contactText .contactTop {
+    width: 100%;
+  }
+  section.contact .contactFlexWrapper .contactText .contactTop .contactTopItem {
+    width: 100%;
+  }
+  section.contact .contactFlexWrapper .contactForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  .wrapper {
+    padding: 0 10%;
+  }
+  header.Hero {
+    padding-top: 40px;
+  }
+  header.Hero .titleDiv {
+    width: 100%;
+  }
+  header.Hero .addressDiv {
+    display: none;
+  }
+  section.whatWeDo {
+    padding-top: 40px;
+  }
+  section.whatWeDo .flexWrapper {
+    padding-top: 0;
+  }
+  section.whatWeDo .flexWrapper .weDoItem {
+    flex: 0 1 70%;
+  }
+  section.menu {
+    padding-top: 40px;
+  }
+  section.menu .eatsWrapper {
+    width: 100%;
+  }
+  section.menu .eatsWrapper .eatsDiv {
+    width: 100%;
+    min-width: 100px;
+    border: none;
+  }
+  section.menu .eatsWrapper .eatsDiv::after {
+    display: none;
+  }
+  section.aboutSection {
+    padding-top: 40px;
+  }
+  section.aboutSection .aboutWrapper {
+    width: 90%;
+  }
+  section.aboutSection .signatureDiv {
+    width: 50%;
+  }
+  section.gallerySection {
+    padding-top: 40px;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGalleryOptions {
+    width: 100%;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGalleryOptions .galleryList {
+    width: 50%;
+    padding: 10px 15px;
+    margin: 0;
+    text-align: center;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGalleryOptions .galleryList p {
+    margin: 0;
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGallery {
+    width: 100%;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGallery .foodGalleryItem {
+    display: block;
+    flex-basis: 50%;
+  }
+  section.gallerySection .foodGalleryWrapper .foodGallery .mediaHide {
+    display: none;
+  }
+  section.journalSection {
+    padding-top: 40px;
+  }
+  section.journalSection .journalGalleryWrapper .journalGalleryItem {
+    flex-basis: 50%;
+  }
+  section.journalSection .journalGalleryWrapper .mediaHide {
+    display: none;
+  }
+  section.reservationSection {
+    padding-top: 40px;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallText {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationCall .reservationCallLink .reservationCallLinkText p {
+    font-weight: 800;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationForm {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationForm .reservationInput {
+    width: 100%;
+  }
+  section.reservationSection .reservationFlexWrapper .reservationForm input {
+    width: 100%;
+  }
+  section.contact {
+    padding-top: 40px;
+  }
+  section.contact .contactFlexWrapper .contactText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.contact .contactFlexWrapper .contactText .contactTop {
+    width: 100%;
+  }
+  section.contact .contactFlexWrapper .contactText .contactTop .contactTopItem {
+    width: 100%;
+  }
+  section.contact .contactFlexWrapper .contactForm {
+    width: 100%;
+  }
+  footer.bakeryFooter .footerFlexWrapper {
+    flex-flow: column-reverse wrap;
+  }
+  footer.bakeryFooter .footerFlexWrapper .customMenu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

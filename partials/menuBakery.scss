@@ -1,0 +1,61 @@
+// Menu Section Bakery
+
+section.menu {
+	padding-top: 90px;
+	padding-bottom: 40px;
+	@include sectionSetup(url(bakery/assets/menubg.png));
+	.menuTitle{
+		background-image: url(bakery/assets/menu.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 50%;
+		max-width: 200px;
+		height: 118px;
+		padding-top: 6%;
+		margin-bottom: 30px;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%, 0);
+		h2 {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+			color: $lightGrey;
+			margin: 0;
+		}
+	}
+	.eatsWrapper {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin: 0 auto;
+		.eatsDiv {
+			border: 1px solid $menuGrey;
+			padding: 3%;
+			width: 47%;
+			position: relative;
+			z-index: 1;
+			li {
+				.menuItemFlexWrapper {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					h4{
+					color: $white;
+					text-align: left;
+					display: block;
+					}
+				}
+				p {
+					color: $menuGrey;
+					margin: 0;
+					width: 80%;
+				}
+			}
+			@include borderDubs($menuGrey);
+		}
+	}
+}
+
+

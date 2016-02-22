@@ -1,0 +1,65 @@
+// journal Section Bakery
+
+section.journalSection {
+	@include sectionSetup(url(bakery/assets/journalbg.png));
+	padding-top: 90px;
+	padding-bottom: 50px;
+	h2 {
+		color: $bakerOrange;
+	}
+	.journalGalleryWrapper {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.journalGalleryItem {
+		position: relative;
+		flex-basis: 33.33%;
+		div.journalGalleryItemEntry {
+			display: none;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: $journalWhite;
+			p {	
+				margin: 0;
+				position: absolute;
+				top: 60%;
+				right: 10px;
+				background-color: $bakerOrange;
+				color: $white;
+			}
+			h4 {
+				margin: 0;
+				position: absolute;
+				top: 75%;
+				right: 10px;
+				text-align: right;
+				font-family: $Rufina-font;
+				text-transform: none;
+			}
+		}
+		&:hover .journalGalleryItemEntry {
+			display: block;
+		}
+	}
+	a {
+		position: relative;
+		left: 50%;
+		transform: translateY(-50%);
+		.journalButton {
+			border: 1px solid $bakerOrange;
+			text-align: center;
+			width: 150px;
+			padding: 10px;
+			transform: translate(-50%);	
+			p {
+				color: $bakerOrange;
+			}
+		}	
+	}
+	
+}

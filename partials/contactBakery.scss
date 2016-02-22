@@ -1,0 +1,79 @@
+// Contact Section Bakery
+
+section.contact {
+	@include sectionSetup(url(bakery/assets/contactbg.png));
+	h2 {
+		color: $bakerOrange;
+	}
+	.contactFlexWrapper {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		.contactText { 
+			width: 48%;
+			display: flex;
+			flex-direction: column;
+			.contactTop {
+				display:flex;
+				flex-flow: row wrap;
+				margin-bottom: 20px;
+				.contactTopItem {
+					width: 100%;
+					p {
+					margin: 0;
+					font-weight: 700;
+					margin-left: 30px;
+					margin-left: 3rem;
+					}
+					.contactAddress {
+					@include contactIcon(url(bakery/assets/noun_Marker_Mattia-Lambardini.svg));
+					}
+					.contactPhone {
+						@include contactIcon(url(bakery/assets/noun-Phone_Hello-Manny.svg));
+					}
+					.contactEmail {
+						@include contactIcon(url(bakery/assets/mailLetter.svg));
+					}	
+				}
+			}
+			.socialMedia {
+				padding-top: 20px;
+				padding-bottom: 20px;
+				i {
+					font-size: 14px;
+					font-size: 1.4rem;
+					letter-spacing: 6px;
+					letter-spacing: 0.6rem;
+					color: $bakerOrange;
+				}
+			}
+			.mapContainer {
+				display: flex;
+				flex-basis: 300px;
+				.googleMap {
+					width: 100%;
+					
+				}
+			}
+		}
+		.contactForm {
+			position: relative;
+			border: 1px solid $darkGrey;
+			z-index: 10;
+			width: 48%;
+			display: flex;
+			flex-direction: column;
+			@include borderDubs($darkGrey);
+			input {
+				width: 100%;
+				padding: 20px;
+				font-size: 14px;
+				font-size: 1.4rem;
+			}
+			textarea {
+				flex-grow: 1;
+			}
+		}
+	}
+}

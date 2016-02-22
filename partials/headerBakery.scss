@@ -1,0 +1,44 @@
+// Header and Hero Section Bakery
+
+
+header.Hero {
+	@include sectionSetup(url(bakery/images/hero.jpg));
+	text-align: center;
+	color: $white;
+	margin: 0 auto;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	position: relative;
+	.titleDiv {
+		width: 50%;
+		margin: 0 auto 60px auto;
+		img.logo {
+			width: 30%;
+			position: relative;
+			left: calc(50% - 15%);
+			display: block;
+		}
+		img.brandName {
+			width: 100%;
+			display: block;
+		}
+		p {
+			font-size: 14px;
+			font-size: 1.4rem;
+		}
+	}
+	.addressDiv {
+		background-image: url(bakery/assets/circle.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 200px;
+		height: 220px;
+		position: absolute;
+		margin: 0 auto;
+		bottom:0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		text-align: center;
+		padding-top: 30px;
+	}
+}

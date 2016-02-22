@@ -1,0 +1,41 @@
+// Footer Section Bakery
+
+footer.bakeryFooter {
+	@include sectionSetup(url(bakery/assets/footerbg.png));
+	color: $white;
+	.footerFlexWrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		li {
+			margin-bottom: 5px;
+		}
+
+		.socialFooter {
+			flex: 1 0 30%;
+			a {
+				i.fa {
+					font-size: 20px;
+					font-size: 2.0rem;
+				}
+				&:hover i.fa {
+					color: $white;
+				}
+			}
+			
+		}
+		.customMenu {
+			flex: 1 0 30%;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.hoursJournal {
+			flex: 1 0 30%;
+			flex-direction: column;
+			.journalPostItem {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}

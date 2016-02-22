@@ -1,0 +1,123 @@
+// Base Styles Bakery 
+
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0 auto;
+}
+
+h2 {
+	font-family: $Rufina-font;
+	font-size: 36px;
+	font-size: 3.6rem;
+	line-height: 36px;
+	line-height: 3.6rem;	
+}
+h3 {
+	font-family: $Rufina-font;
+	color: $bakerOrange;
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 24px;
+	line-height: 2.4rem;
+}
+h4{
+	font-family: $Raleway-font;
+	font-size: 14px;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+p {
+	@include textStandards(14);
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: block;
+	width: 100%;
+	list-style-type: none;
+	font-family: $Raleway-font;
+	margin: 0;
+
+}
+a {
+	text-decoration: none;
+	color: $bakerOrange;
+	@include textStandards(14);
+	&:hover {
+		color: $white;
+	}
+}
+.wrapper {
+	padding: 0 15%;
+}
+img {
+	display: block;
+	width: 100%;
+}
+
+i.fa {
+	font-size: 14px;
+	font-size: 1.4rem;
+	letter-spacing: 6px;
+	letter-spacing: 0.6rem;
+	color: $bakerOrange;
+}
+
+input {
+	width: 100%;
+	font-family: $Raleway-font;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: $darkGrey;
+	font-weight: 700;
+	padding: 20px;
+	padding: 2.0rem;
+	border: 1px solid $darkGrey;
+	outline: none;
+	&::-webkit-placeholder {
+		color: $darkGrey;
+	}
+	&::-moz-placeholder {
+		color: $darkGrey;
+	} 
+	&::-ms-input-placeholder {
+		color: $darkGrey;
+	}
+}
+
+textarea {
+	width: 100%;
+	font-family: $Raleway-font;
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: $darkGrey;
+	font-weight: 700;
+	padding: 20px;
+	padding: 2.0rem;
+	border: 1px solid $darkGrey;
+	outline: none;
+	resize: none;
+}
+input.formButton {
+	width: 100%;
+	font-family: $Raleway-font;
+	font-size: 18px;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	letter-spacing: 0.2rem;
+	color: $darkGrey;
+	font-weight: 700;
+	padding: 20px;
+	padding: 2.0rem;
+	border: 1px solid $darkGrey;
+	outline: none;
+	background: url(bakery/assets/seal.png) 5% no-repeat;
+	background-color: white;
+}
