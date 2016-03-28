@@ -2,8 +2,8 @@
 
 	section.gallerySection {
 		@include sectionSetup(url(bakery/assets/gallerybg.jpg));
-		padding-top: 70px;
-		padding-bottom: 50px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 		h2{
 			color: $bakerOrange;
 		}
@@ -17,6 +17,7 @@
 			width: 23%;
 			float: left;
 			padding: 10px;
+			margin: 5px;
 			margin-bottom: 20px;
 			border: 1px solid $darkGrey;
 			position: relative;

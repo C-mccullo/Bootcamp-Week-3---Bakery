@@ -1,0 +1,62 @@
+
+// Color Variables
+$white: #ffffff;
+$journalWhite: rgba(255,255,255,0.8);
+$lightGrey: #fefcf8;
+$mediumGrey: #262422;
+$darkGrey: #262422;
+$borderGrey: #404045;
+$blogGrey: #5c5c5c;
+$menuGrey: #67676e;
+$bakerOrange: #ea9044;
+
+// Fonts 
+
+$Raleway-font: 'Raleway', sans-serif;
+$Rufina-font: 'Rufina', serif;
+
+// Mixins
+
+@mixin sectionSetup($backgroundUrl) {
+	background-image: $backgroundUrl;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	z-index: -2;
+	margin: 0 auto;
+}
+@mixin textStandards($textStyles) {
+	font-family: $Raleway-font;
+	font-size: $textStyles * 1px;
+	font-size: $textStyles/10 * 1rem;
+	line-height: $textStyles * 1px + 4px;
+	line-height: $textStyles/10 * 1rem + 0.4rem;
+} 
+
+@mixin borderDubs($borderColor) {
+	&::after {
+		content: "";
+		position: absolute;
+		top: -5px;
+		bottom: -5px;
+		left: -5px;
+		right: -5px;
+		border: 2px solid $borderColor;
+		z-index: -1;
+	}
+}
+
+@mixin contactIcon($SVGLink) {
+	&::before {
+		display: block;
+		content: ($SVGLink);
+		width: 18px;
+		height: 18px;
+		position: relative;
+		left: 30px;
+		left: -3rem;
+		bottom: 17px;
+		bottom: -1.7rem;
+	}
+}

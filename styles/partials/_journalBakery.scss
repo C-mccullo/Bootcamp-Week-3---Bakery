@@ -1,9 +1,9 @@
 // journal Section Bakery
 
 section.journalSection {
-	@include sectionSetup(url(bakery/assets/journalbg.png));
-	padding-top: 90px;
-	padding-bottom: 50px;
+	@include sectionSetup(url(../../bakery/assets/journalbg.png));
+	padding-top: 60px;
+	padding-bottom: 60px;
 	h2 {
 		color: $bakerOrange;
 	}
@@ -47,10 +47,9 @@ section.journalSection {
 		}
 	}
 	a {
-		position: relative;
-		left: 50%;
-		transform: translateY(-50%);
 		.journalButton {
+			position: relative;
+			left: 50%;
 			border: 1px solid $bakerOrange;
 			text-align: center;
 			width: 150px;
@@ -58,8 +57,8 @@ section.journalSection {
 			transform: translate(-50%);	
 			p {
 				color: $bakerOrange;
+				margin: 0;
 			}
 		}	
 	}
-	
 }

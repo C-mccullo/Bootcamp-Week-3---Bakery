@@ -1,25 +1,24 @@
 // Menu Section Bakery
 
 section.menu {
-	padding-top: 90px;
-	padding-bottom: 40px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	@include sectionSetup(url(bakery/assets/menubg.png));
 	.menuTitle{
-		background-image: url(bakery/assets/menu.png);
+		background-image: url(../../bakery/assets/menu.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		width: 50%;
 		max-width: 200px;
 		height: 118px;
-		padding-top: 6%;
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 		position: relative;
 		left: 50%;
 		transform: translate(-50%, 0);
 		h2 {
 			position: absolute;
 			left: 50%;
-			transform: translate(-50%);
+			transform: translate(-50%, 100%);
 			color: $lightGrey;
 			margin: 0;
 		}
@@ -34,6 +33,7 @@ section.menu {
 			border: 1px solid $menuGrey;
 			padding: 3%;
 			width: 47%;
+			margin: 5px;
 			position: relative;
 			z-index: 1;
 			li {
